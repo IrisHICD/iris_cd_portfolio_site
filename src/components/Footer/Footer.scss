@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  &__mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+
+  &__emailicon {
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+  &__email {
+    height: 60px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}

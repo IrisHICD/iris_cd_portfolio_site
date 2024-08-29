@@ -1,19 +1,51 @@
+@use "../../partials/partials" as *;
+
 .cover {
   display: flex;
-  justify-content: space-evenly;
-  background-color: #0caae9;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 
   &__left {
     width: 90vw;
+    margin-top: 150px;
+    @include tablet {
+      margin-top: 0;
+    }
   }
 
   &__right {
     width: 10vw;
   }
 
+  //screenshot
+  &__screenshots {
+    height: 200px;
+    position: relative;
+  }
+
+  &__screenshot {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  @include tablet {
+    &__ss2 {
+      position: absolute;
+      top: 6rem;
+      left: 10rem;
+    }
+    &__ss3 {
+      margin-left: 5rem;
+    }
+  }
+
+  //titles and links
   &__arrow {
     height: 40px;
+    background: none;
   }
 
   &__links {
@@ -29,7 +61,9 @@
 
   &__a {
     margin: 1rem;
+    font-size: 1.5rem;
   }
+  //footer
 }
 
 //Typing the title

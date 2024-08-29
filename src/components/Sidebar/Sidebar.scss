@@ -1,0 +1,50 @@
+.sidebar {
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: width 0.3s ease;
+}
+
+.sidebar .tab {
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar .tab .icon {
+  font-size: 24px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.sidebar .tab .text {
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar .tab:hover {
+  background-color: rgba(255, 165, 0, 0.8);
+}
+
+.sidebar:hover {
+  width: 180px;
+}
+
+.sidebar:hover .tab .text {
+  opacity: 1;
+}
+
+.sidebar:hover .tab .icon {
+  transform: scale(1.2);
+}

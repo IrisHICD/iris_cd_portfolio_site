@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Iris Cheang-Deis - Software Engineer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio, where I showcase my skills, experience, and projects as a Software Engineer. This online resume is designed to provide a comprehensive view of my professional journey, including my work experience, education, certifications, and key projects.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio serves as an interactive and dynamic version of my resume, highlighting my expertise in software development, particularly in web technologies. It is built with modern web development tools and frameworks, providing a smooth and engaging user experience.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **About Me:** A brief introduction to who I am and my career goals.
+- **Work Experience:** Detailed descriptions of my previous roles and responsibilities.
+- **Projects:** A showcase of key projects I've worked on, complete with descriptions, technologies used, and links to live demos or repositories.
+- **Education & Certifications:** Information about my academic background and any relevant certifications.
+- **Contact Information:** Easy access to my contact details and links to my professional profiles.
 
-- Configure the top-level `parserOptions` property like this:
+## Technology Stack
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Frontend:**
+  - React
+  - SCSS
+  - Framer Motion (for animations)
+  - Parallax.js (for Parallax effects)
+  - HTML5/CSS3
+- **Backend:**
+  - Node.js
+  - Express.js
+  - OpenAI API integration
+  - MySQL (database management)
+- **Deployment:**
+  - Vercel/Netlify for frontend deployment
+  - Heroku for backend deployment
+  - Docker (for containerization)
+- **Tools & Libraries:**
+  - Git & GitHub
+  - npm
+  - Webpack/Babel
+- **Design:**
+  - Figma (for design mockups)
