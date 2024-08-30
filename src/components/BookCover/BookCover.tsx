@@ -1,8 +1,15 @@
 import logo from "../../assets/images/logo.png";
 import waterfall from "../../assets/images/waterfall.mp4";
+import { useState } from "react";
 import "./BookCover.scss";
 
 function BookCover() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className="book">
@@ -17,6 +24,32 @@ function BookCover() {
           <div className="book__title">
             <h1 className="book__name">Iris Cheang-Deis</h1>
             <h2 className="book__job">Web Developer</h2>
+          </div>
+        </div>
+
+        <div className="navbar">
+          <div>
+            <img className="navbar__logo" src={logo} />
+          </div>
+          <div
+            className={`navbar__links ${isOpen ? "navbar__links--open" : ""}`}
+          >
+            <a className="navbar__a" href="#about">
+              About
+            </a>
+            <a className="navbar__a" href="#services">
+              Projects
+            </a>
+            <a className="navbar__a" href="#contact">
+              Contact
+            </a>
+          </div>
+          <div className="navbar__toggle" onClick={toggleMenu}>
+            <div className="burger-icon">
+              <div className="burger-icon__line"></div>
+              <div className="burger-icon__line"></div>
+              <div className="burger-icon__line"></div>
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 //sample from http://mosaicthemes.net/react/anema/onepage2/
+@use "../../partials/partials" as *;
 
 .book {
   display: flex;
@@ -29,8 +30,12 @@
   }
 
   &__logo {
-    height: 100px;
-    border-radius: 50%;
+    display: none;
+    @include tablet {
+      display: block;
+      height: 100px;
+      border-radius: 50%;
+    }
   }
   &__name {
     padding: 1rem;
@@ -43,11 +48,15 @@
   &__1,
   &__2,
   &__3 {
-    width: 100px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    transition: width 0.5s ease-in-out;
+    display: none;
+
+    @include tablet {
+      width: 100px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      transition: width 0.5s ease-in-out;
+    }
   }
 
   &__1 {
@@ -67,9 +76,91 @@
   &__3:hover {
     width: 300px;
   }
+  &__1:hover .book__text,
+  &__2:hover .book__text,
+  &__3:hover .book__text {
+    transform: rotate(0deg);
+  }
 
   &__text {
     transform: rotate(-90deg);
     margin-bottom: 100px;
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @include tablet {
+    display: none;
+  }
+
+  &__logo {
+    height: 5rem;
+    border-radius: 50%;
+    padding: 1rem;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__links {
+    gap: 20px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 7rem;
+    right: 0;
+    background-color: #333;
+    padding: 10px 0;
+
+    a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ddd;
+      }
+    }
+
+    &--open {
+      display: flex;
+    }
+  }
+  &__a {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__toggle {
+    display: none;
+    cursor: pointer;
+    display: block;
+
+    .burger-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 25px;
+      height: 18px;
+      padding-right: 1rem;
+
+      &__line {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+      }
+    }
   }
 }
