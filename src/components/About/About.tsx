@@ -1,4 +1,5 @@
 import "./About.scss";
+import timeline from "../../assets/timeline.svg";
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam</p>
       </div>
       <div>
-        <h1>Timeline</h1>
+        <img src={timeline} />
       </div>
     </>
   );

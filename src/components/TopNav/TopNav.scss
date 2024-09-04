@@ -1,0 +1,11 @@
+@use "../../partials/partials" as *;
+
+.topnav {
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    height: 132px;
+    color: #f3f7f0;
+    border-bottom: 1px solid red;
+  }
+}

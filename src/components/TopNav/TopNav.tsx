@@ -1,10 +1,9 @@
 import logo from "../../assets/images/logo.png";
-import waterfall from "../../assets/images/waterfall.mp4";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./BookCover.scss";
+import "./TopNav.scss";
 
-function BookCover() {
+function Projects() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navigate = useNavigate();
@@ -19,18 +18,10 @@ function BookCover() {
 
   return (
     <>
-      <div className="book">
+      <div className="topnav">
         <div className="book__main">
-          <video autoPlay muted loop className="book__video">
-            <source src={waterfall} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
           <div>
             <img className="book__logo" src={logo} />
-          </div>
-          <div className="book__title">
-            <h1 className="book__name">Iris Cheang-Deis</h1>
-            <h2 className="book__job">Web Developer</h2>
           </div>
         </div>
 
@@ -41,11 +32,11 @@ function BookCover() {
           <div
             className={`navbar__links ${isOpen ? "navbar__links--open" : ""}`}
           >
-            <a className="navbar__dropdown navbar__a" href="about">
-              About
+            <a className="navbar__dropdown navbar__a" href="">
+              Home
             </a>
-            <a className="navbar__dropdown navbar__b" href="projects">
-              Projects
+            <a className="navbar__dropdown navbar__b" href="about">
+              About
             </a>
             <a className="navbar__dropdown navbar__c" href="contact">
               Contact
@@ -74,4 +65,4 @@ function BookCover() {
   );
 }
 
-export default BookCover;
+export default Projects;
