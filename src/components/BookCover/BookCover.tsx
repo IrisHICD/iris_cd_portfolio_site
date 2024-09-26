@@ -1,6 +1,4 @@
 import logo from "../../assets/images/logo.png";
-import waterfall from "../../assets/images/waterfall.jpg";
-// import waterfall from "../../assets/images/waterfall.mp4";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BookCover.scss";
@@ -22,10 +20,6 @@ function BookCover() {
     <>
       <div className="book">
         <div className="book__main">
-          {/* <video autoPlay muted loop className="book__video">
-            <source src={waterfall} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> */}
           <div>
             <img className="book__logo" src={logo} />
           </div>
